@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Mahendra Chodhary - Physiotherapist</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        header {
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 4%;
+        }
+        footer a {
+            width: 40%;
+        }
+        .slider-image {
+            width: 100%;
+            height: auto;
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        h1, h2, h3 {
+            font-family: 'Arial Black', sans-serif;
+        }
+        nav {
+            background-color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            border-bottom: 2px solid #ddd;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 1rem;
+            font-size: 1.2rem;
+        }
+        nav a:hover {
+            color: #4CAF50;
+        }
+        section {
+            padding: 2rem;
+            background-color: #fff;
+            margin: 2rem 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        section#skills {
+            background-image: url('http://www.pixelstalk.net/wp-content/uploads/2016/06/HD-Wallpaper-Waterfall-Download.jpg');
+            background-size: cover;
+            color: white;
+            overflow: hidden; /* Hide overflowing content */
+        }
+        #skills ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            white-space: nowrap; /* Ensure all items are in one line */
+            animation: slide 20s infinite linear; /* Animation for sliding effect */
+        }
+
+        #skills ul li {
+            display: inline-block; /* Display items in a row */
+            font-weight: bold;
+            margin-right: 20px; /* Adjust margin between items */
+        }
+
+        /* Keyframes for sliding animation */
+        @keyframes slide {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%); /* Slide to the left */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="slider-image" src="http://www.pixelstalk.net/wp-content/uploads/2016/07/Beautiful-Full-HD-Images.jpg" alt="Header Image">
+        <img class="slider-image" src="https://cdn.wallpapersafari.com/95/85/eV9PRm.jpg" alt="Header Image">
+        <img class="slider-image" src="http://www.pixelstalk.net/wp-content/uploads/2016/06/Jungle-HD-Image.jpg" alt="Header Image">
+        <img class="slider-image" src="https://hdwallpaperim.com/wp-content/uploads/2017/08/31/149627-HDR-building-cityscape.jpg" alt="Header Image">
+        <img class="slider-image" src=" https://images.alphacoders.com/188/188121.jpg" alt="Header Image">
+        <img class="slider-image" src="https://wallpapertag.com/wallpaper/full/9/7/8/679355-large-size-backgrounds-1920x1080-for-tablet.jpg" alt="Header Image">
+        <img class="slider-image" src="http://www.pixelstalk.net/wp-content/uploads/2016/06/HD-Wallpaper-Waterfall-Download.jpg" alt="Header Image">
+        <img class="slider-image" src="https://wallpaper-house.com/data/out/6/wallpaper2you_134964.jpg" alt="Header Image">
+        <h1>Dr. Mahendra Chodhary</h1>
+        <h2>Physiotherapist</h2>
+    </header>
+    
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="about">
+        <h2>About Dr. Mahendra Chodhary</h2>
+        <p>Contact via Gmail: <a href="mailto:your.email@gmail.com">your.email@gmail.com</a></p>
+        <p>Contact via LinkedIn: <a href="https://www.linkedin.com/in/dr-mahender-saran-901146199?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BlWIIrkPqQku%2B4hI0BSjByQ%3D%3D">Dr. Mahendra Saran</a></p>
+        <p>Contact via Phone: <a href="tel:6376328279">6376328279</a></p>
+    </section>
+    <section id="skills">
+        <ul>
+            <li>Physical Therapy</li>
+            <li>Pain Management</li>
+            <li>Spine Injury Rehabilitation</li>
+            <li>Injury Prevention</li>
+            <li>Childcare</li>
+            <li>Sports Physiotherapy</li>
+            <li>Neuro Physiotherapy</li>
+            <li>Musculoskeletal Physiotherapy</li>
+            <li>Pulmonary Function Test</li>
+            <li>NCV, EMG</li>
+            <li>Intensive care unit</li>
+            <li>Trauma ICU</li>
+            <li>Neuro ICU</li>
+            <li>PICU</li>
+            <li>NICU</li>
+            <li>IPD (Burn ward, Ortho ward, Plastic surgery ward, General surgery ward )</li>
+            <li>Good time management</li>
+            <li>Teamworking skills</li>
+            <li>Creative thinking</li>
+            <li>Self Confidence</li>
+        </ul>
+    </section>
+    <footer>
+        <p>Copyright &copy; 2024 Dr. Mahendra Chodhary</p>
+    </footer>
+    <script>
+        // JavaScript for automatic image slider
+        let slideIndex = 0;
+        const images = document.querySelectorAll('.slider-image');
+        const skills = document.querySelector('#skills');
+        const skillItems = skills.querySelectorAll('li');
+
+        function showSlides() {
+            for (let i = 0; i < images.length; i++) {
+                images[i].style.display = 'none';  
+            }
+            slideIndex++;
+            if (slideIndex > images.length) {slideIndex = 1}    
+            images[slideIndex-1].style.display = 'block';  
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+
+        function showSkills() {
+            for (let i = 0; i < skillItems.length; i++) {
+                skillItems[i].style.display = 'none';  
+            }
+            slideIndex++;
+            if (slideIndex > skillItems.length) {slideIndex = 1}    
+            skillItems[slideIndex-1].style.display = 'block';  
+            setTimeout(showSkills, 2000); // Change skill every 2 seconds
+        }
+        showSlides();
+    </script>
+</body>
+</html>
